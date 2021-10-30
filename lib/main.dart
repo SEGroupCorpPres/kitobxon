@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:kitobxon/screens/login/login_screen.dart';
-import 'package:kitobxon/screens/payment.dart';
+import 'package:kitobxon/style/theme.dart';
 
+import 'screens/login/login_screen.dart';
+import 'screens/payment.dart';
 import 'screens/children.dart';
 import 'screens/home.dart';
 import 'screens/splash/splash.dart';
-import 'style/theme.dart';
+// import 'style/theme.dart';
 
 void main() {
   runApp(MyApp());
