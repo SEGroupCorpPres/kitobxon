@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
+import 'package:kitobxon/screens/payment.dart';
 import 'package:kitobxon/style/constants.dart';
 
 import '../widgets/button.dart';
 import '../widgets/child_books_list_tile.dart';
 
-class BooksOfChild extends StatelessWidget {
+class BooksOfChild extends StatefulWidget {
   const BooksOfChild({
     Key? key,
   }) : super(key: key);
 
+  @override
+  State<BooksOfChild> createState() => _BooksOfChildState();
+}
+
+class _BooksOfChildState extends State<BooksOfChild> {
   @override
   Widget build(BuildContext context) {
     Size? size = MediaQuery.of(context).size;
@@ -160,7 +166,14 @@ class BooksOfChild extends StatelessWidget {
             50,
             size.width / 2,
             30,
-            () {},
+            () {
+              HapticFeedback.lightImpact();
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                    builder: (BuildContext context) => Payment()
+                ),
+              );
+            },
             Theme.of(context).primaryColor,
           ),
           Expanded(

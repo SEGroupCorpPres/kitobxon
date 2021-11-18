@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart' as style;
 
 import '../style/constants.dart';
 
@@ -11,21 +11,22 @@ Widget buildHomeMenuListTile({
   Function()? onTap,
 }) {
   return Container(
-    child: Card(
-      child: ListTile(
-        subtitle: Text(
-          subTitle!,
-          style: TextStyle(
-            color: kButtonColor,
-            fontWeight: FontWeight.bold,
-            fontSize: 25,
-          ),
-          textAlign: TextAlign.start,
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.all(Radius.circular(10))
+    ),
+    child: ListTile(
+      subtitle: Text(
+        subTitle!,
+        style: TextStyle(
+          color: kButtonColor,
+          fontWeight: FontWeight.bold,
+          fontSize: 25,
         ),
-        leading: SvgPicture.asset('assets/icons/svg/' + svgIcon!, fit: BoxFit.contain,),
-        tileColor: Color(0xFFE4F2F2),
-        onTap: onTap!,
+        textAlign: TextAlign.start,
       ),
+      leading: style.SvgPicture.asset('assets/icons/svg/' + svgIcon!, fit: BoxFit.contain,),
+      tileColor: Color(0xFFE4F2F2),
+      onTap: onTap!,
     ),
   );
 }

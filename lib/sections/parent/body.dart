@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:kitobxon/screens/transaction_logs.dart';
 
 import '../../widgets/home_menu_list_tile.dart';
 import '../../screens/children.dart';
-import '../../screens/logs.dart';
 import '../../screens/payment.dart';
 import '../../screens/settings.dart';
 
@@ -63,7 +63,7 @@ class _BodyState extends State<Body> {
           onTap: () => Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (BuildContext context) => Logs(),
+              builder: (BuildContext context) => TransactionLogsPage(),
             ),
           ),
         ),

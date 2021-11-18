@@ -8,7 +8,7 @@ import 'package:kitobxon/widgets/button.dart';
 import 'package:kitobxon/widgets/login_text_input_field.dart';
 import 'package:kitobxon/screens/password_recovery.dart';
 
-import '../home.dart';
+import '../home/home.dart';
 import 'behavior.dart';
 
 class LogInScreen extends StatefulWidget {

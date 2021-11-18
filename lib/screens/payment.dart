@@ -5,6 +5,8 @@ import 'package:flutter_credit_card/credit_card_widget.dart';
 import 'package:kitobxon/widgets/button.dart';
 import 'package:kitobxon/widgets/login_text_input_field.dart';
 
+import 'enter_and_confirm_amount.dart';
+
 class Payment extends StatefulWidget {
   const Payment({Key? key}) : super(key: key);
 
@@ -112,29 +114,7 @@ class _PaymentState extends State<Payment> {
                   HapticFeedback.lightImpact();
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (BuildContext context) =>
-                          Scaffold(
-                            appBar: AppBar(
-                              systemOverlayStyle: SystemUiOverlayStyle(
-                                statusBarColor: Colors.transparent,
-                                statusBarIconBrightness: Brightness.dark,
-                              ),
-                              title: Container(
-                                padding: EdgeInsets.only(right: 10),
-                                alignment: Alignment.topRight,
-                                child: Text(
-                                  'To\'lov',
-                                ),
-                              ),
-                            ),
-                            body: Container(
-                              color: Colors.greenAccent,
-                              child: Center(child: Text(
-                                'To\'lov summasini kiritish'
-                              ),
-                              ),
-                            ),
-                          ),
+                      builder: (BuildContext context) => EnConAmountPage()
                     ),
                   );
                 },

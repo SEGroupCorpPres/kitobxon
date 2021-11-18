@@ -33,7 +33,7 @@ class _ChildrenState extends State<Children> {
           buildChildrenListTile(
             context: context,
             title: 'Muhammad Abdulloh ibn Sulaymon',
-            subTitle: '5-B sinf \nPresident Maktabi',
+            subTitle: '6-B sinf \nPresident Maktabi',
             price: 40000,
             quantity: 16,
             onTap: () {
@@ -48,10 +48,14 @@ class _ChildrenState extends State<Children> {
           buildChildrenListTile(
             context: context,
             title: 'Muhammad Abdurohman ibn Sulaymon',
-            subTitle: '5-B sinf \nPresident Maktabi',
+            subTitle: '8-B sinf \nPresident Maktabi',
             price: 40000,
             quantity: 16,
-            onTap: () {},
+            onTap: () {Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (BuildContext context) => BooksOfChild(),
+              ),
+            );},
           ),
           buildDivider(),
           buildChildrenListTile(
@@ -60,43 +64,63 @@ class _ChildrenState extends State<Children> {
             subTitle: '5-B sinf \nPresident Maktabi',
             price: 40000,
             quantity: 16,
-            onTap: () {},
+            onTap: () {Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (BuildContext context) => BooksOfChild(),
+              ),
+            );},
           ),
           buildDivider(),
           buildChildrenListTile(
             context: context,
             title: 'Maryam bintu Sulaymon',
-            subTitle: '5-B sinf \nPresident Maktabi',
+            subTitle: '3-B sinf \nPresident Maktabi',
             price: 40000,
             quantity: 16,
-            onTap: () {},
+            onTap: () {Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (BuildContext context) => BooksOfChild(),
+              ),
+            );},
           ),
           buildDivider(),
           buildChildrenListTile(
             context: context,
             title: 'Osiyo bintu Sulaymon',
-            subTitle: '5-B sinf \nPresident Maktabi',
+            subTitle: '9-B sinf \nPresident Maktabi',
             price: 40000,
             quantity: 16,
-            onTap: () {},
+            onTap: () {Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (BuildContext context) => BooksOfChild(),
+              ),
+            );},
           ),
           buildDivider(),
           buildChildrenListTile(
             context: context,
             title: 'Hadicha bintu Sulaymon',
-            subTitle: '5-B sinf \nPresident Maktabi',
+            subTitle: '7-B sinf \nPresident Maktabi',
             price: 40000,
             quantity: 16,
-            onTap: () {},
+            onTap: () {Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (BuildContext context) => BooksOfChild(),
+              ),
+            );},
           ),
           buildDivider(),
           buildChildrenListTile(
             context: context,
             title: 'Fotima bintu Sulaymon',
-            subTitle: '5-B sinf \nPresident Maktabi',
+            subTitle: '2-B sinf \nPresident Maktabi',
             price: 40000,
             quantity: 16,
-            onTap: () {},
+            onTap: () {Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (BuildContext context) => BooksOfChild(),
+              ),
+            );},
           ),
           buildDivider(),
         ],

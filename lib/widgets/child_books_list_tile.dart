@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_svg/flutter_svg.dart' as style;
 
 import '../style/constants.dart';
 
@@ -18,7 +18,7 @@ Widget buildBooksListTile({
         title!,
         style: TextStyle(fontWeight: FontWeight.bold),
       ),
-      leading: SvgPicture.asset('assets/icons/svg/' + icon!),
+      leading: style.SvgPicture.asset('assets/icons/svg/' + icon!),
       subtitle: Text(subTitle!),
       trailing: Text('$priceOfBook' + 'so\'m'),
       onTap: onTap!,

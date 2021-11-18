@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:kitobxon/screens/enter_and_confirm_amount.dart';
 import 'package:kitobxon/style/theme.dart';
 
 import 'screens/login/login_screen.dart';
 import 'screens/payment.dart';
 import 'screens/children.dart';
-import 'screens/home.dart';
+import 'screens/home/home.dart';
 import 'screens/splash/splash.dart';
 // import 'style/theme.dart';
 
@@ -27,10 +28,11 @@ class MyApp extends StatelessWidget {
       title: 'Kitobxon',
       theme: theme(),
       // home: SplashScreen(),
-      // home: HomePage(),
+      home: HomePage(),
       // home: Children(),
       // home: LogInScreen(),
-      home: Payment(),
+      // home: Payment(),
+      // home: EnConAmountPage()
     );
   }
 }
