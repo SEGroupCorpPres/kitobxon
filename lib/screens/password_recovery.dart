@@ -1,6 +1,4 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:kitobxon/screens/login/login_screen.dart';
@@ -62,9 +60,8 @@ class _PasswordRecoveryScreenState extends State<PasswordRecoveryScreen>
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        brightness: Brightness.dark,
         backgroundColor: Colors.transparent,
-        elevation: 0,
+        elevation: 0, systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       body: ScrollConfiguration(
         behavior: MyBehavior(),

@@ -1,6 +1,4 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -64,9 +62,8 @@ class _LogInScreenState extends State<LogInScreen>
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        brightness: Brightness.dark,
         backgroundColor: Colors.transparent,
-        elevation: 0,
+        elevation: 0, systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       body: ScrollConfiguration(
         behavior: MyBehavior(),
